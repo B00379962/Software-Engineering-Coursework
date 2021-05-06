@@ -41,10 +41,10 @@ namespace AssetReservation
                 string barberName = a.Barber;
                 int barberIds = a.BarberID;
                 string Shop = a.Shop;
-                decimal Price = a.Price;
+               
 
                 //write file method 
-                AppFileWrite(appointmentId, barberName, barberIds, Shop, Price);
+                AppFileWrite(appointmentId, barberName, barberIds, Shop);
             }
             else
             {
@@ -52,7 +52,7 @@ namespace AssetReservation
             }
         }
 
-        private void AppFileWrite(int Id, string barberName, int barberIds, string Shop, decimal price)
+        private void AppFileWrite(int Id, string barberName, int barberIds, string Shop)
         {
             AppointmentListFile appList = new AppointmentListFile();
 
@@ -66,7 +66,7 @@ namespace AssetReservation
                     {
                         new Appointment()
                             // need to create another level for the price and time, same as XML
-                            {barber = barberName, BarberID = barberIds, Id = Id, booked = "Y", shop = Shop, Price = price}
+                            {barber = barberName, BarberID = barberIds, Id = Id, booked = "Y", shop = Shop}
                     }
                 }
             };
