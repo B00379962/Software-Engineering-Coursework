@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
+
+namespace DataAccessManager
+{
+    public class Product
+    {
+        [XmlAttribute("name")]
+        public string Name { get; set; }
+
+        [XmlAttribute("Amount")]
+        public int Ammount { get; set; }
+
+        [XmlAttribute("prodid")]
+        public int ProductID { get; set; }
+    }
+}
