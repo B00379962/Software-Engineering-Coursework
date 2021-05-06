@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<AppClasses xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AppClass>
+    <Appointments>
+      <Appointment id="99" barberid="123" barber="Test" booked="Y" shop="Shop 1" />
+    </Appointments>
+  </AppClass>
+</AppClasses>

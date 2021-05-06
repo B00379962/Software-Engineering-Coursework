@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ProdClasses xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProdClass>
+    <Products>
+      <Product name="Test Product" Amount="5" prodid="100" />
+    </Products>
+  </ProdClass>
+</ProdClasses>

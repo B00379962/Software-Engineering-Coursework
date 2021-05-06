@@ -1,0 +1,6 @@
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\B00379962 Software Engineering API\obj\Debug\B00379962 Software Engineering API.csprojAssemblyReference.cache
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\B00379962 Software Engineering API\obj\Debug\B00379962 Software Engineering API.csproj.CoreCompileInputs.cache
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\B00379962 Software Engineering API\bin\Debug\B00379962 Software Engineering API.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\B00379962 Software Engineering API\bin\Debug\B00379962 Software Engineering API.pdb
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\B00379962 Software Engineering API\obj\Debug\B00379962 Software Engineering API.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\B00379962 Software Engineering API\obj\Debug\B00379962 Software Engineering API.pdb

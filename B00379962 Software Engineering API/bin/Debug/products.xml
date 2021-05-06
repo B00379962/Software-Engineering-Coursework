@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ProdClasses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProdClass name="Product">
+    <Products>
+      <Product name="Hair Gel" prodid="1" Amount="10" />
+      <Product name="Hair Spray" prodid="2" Amount="8" />
+    </Products>
+  </ProdClass>
+</ProdClasses>

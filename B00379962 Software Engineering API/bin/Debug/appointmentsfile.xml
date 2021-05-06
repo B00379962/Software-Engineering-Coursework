@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<AppClasses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppClass name="Appointment" time="0900" price="10.00">
+    <Appointments>
+      <Appointment id="1" barberid="1" barber="Davie Walker" booked="N" shop="Shop 1" />
+      <Appointment id="2" barberid="2" barber="Robbie Murphy" booked="N" shop="Shop 1"/>
+      <Appointment id="3" barberid="3" barber="Barry Smith" booked="N" shop="Shop 1"/>
+      <Appointment id="6" barberid="4" barber="John McDonald" booked="N" shop="Shop 2"/>
+    </Appointments>
+  </AppClass>
+<AppClass name="Appointment" time="1000" price="12.00">
+    <Appointments>
+      <Appointment id="4" barberid="1" barber="Davie Walker" booked="N" shop="Shop 1"/>
+      <Appointment id="5" barberid="3" barber="Barry Smith" booked="N" shop="Shop 1"/>
+      <Appointment id="7" barberid="4" barber="John McDonald" booked="N" shop="Shop 2"/>
+    </Appointments>
+  </AppClass>
+<AppClass name="Appointment" time="1100" price="13.00">
+    <Appointments>
+      <Appointment id="4" barberid="1" barber="Davie Walker" booked="N" shop="Shop 1"/>
+      <Appointment id="5" barberid="3" barber="Barry Smith" booked="N" shop="Shop 1"/>
+      <Appointment id="7" barberid="4" barber="John McDonald" booked="N" shop="Shop 2"/>
+    </Appointments>
+  </AppClass>
+<AppClass name="Appointment" time="1200" price="14.50">
+    <Appointments>
+      <Appointment id="4" barberid="1" barber="Davie Walker" booked="N" shop="Shop 1"/>
+      <Appointment id="5" barberid="3" barber="Barry Smith" booked="N" shop="Shop 1"/>
+      <Appointment id="7" barberid="4" barber="John McDonald" booked="N" shop="Shop 2"/>
+    </Appointments>
+  </AppClass>
+</AppClasses>
