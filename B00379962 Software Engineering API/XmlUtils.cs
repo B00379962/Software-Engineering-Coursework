@@ -19,6 +19,7 @@ namespace DataAccessManager
             }
             catch (Exception e)
             {
+                // show exception if there is one
                 Console.WriteLine(e.ToString());
             }
 
@@ -39,6 +40,7 @@ namespace DataAccessManager
             }
             catch (Exception e)
             {
+                // show exception if there is one
                 Console.WriteLine(e.ToString());
                 return false;
             }
