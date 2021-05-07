@@ -1,0 +1,38 @@
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.abstractions.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\B00379962 Software Engineering API.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.assert.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.core.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.execution.desktop.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\B00379962 Software Engineering API.pdb
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.assert.xml
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.core.xml
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\bin\Debug\xunit.execution.desktop.xml
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\obj\Debug\Api.Tests.csprojAssemblyReference.cache
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\obj\Debug\Api.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\obj\Debug\Api.Tests.csproj.CopyComplete
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.abstractions.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\APITests.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\APITests.pdb
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\B00379962 Software Engineering API.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.assert.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.core.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.execution.desktop.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\B00379962 Software Engineering API.pdb
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.assert.xml
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.core.xml
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\bin\Debug\xunit.execution.desktop.xml
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\obj\Debug\Api.Tests.csprojAssemblyReference.cache
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\obj\Debug\Api.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\obj\Debug\Api.Tests.csproj.CopyComplete
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\obj\Debug\APITests.dll
+C:\Users\Danny\Documents\Visual Studio 2017\Projects\B00379962 Software Engineering API\APITests\obj\Debug\APITests.pdb
