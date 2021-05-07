@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 using DataAccessManager;
-using AssetReservation;
 
 namespace APITests
 {
     public class InstantiatedAppointmentsTests
     {
+
         [Fact]
-        public void CheckListAdditioOneItem()
+        public void CheckListAdditionOneItem()
         {
+            // check 1 item is being added to the list with no external dependency 
             List<InstantiatedApps> apps = new List<InstantiatedApps>();
-            apps.Add(new InstantiatedApps(1, 100, "Test User", "Y", "Test Shop"));
+            apps.Add(new InstantiatedApps(1, 100, "Test User", "Y", "Test Shop", "Appointment", 1000, 1200));
 
             var counts = apps.Count();
 
@@ -23,13 +21,15 @@ namespace APITests
         }
 
         [Fact]
-        public void CheckListAdditioMultipleItem()
+        public void CheckListAdditionMultipleItem()
         {
+            // check multiple items are being added to the list with no external dependency 
+
             List<InstantiatedApps> apps = new List<InstantiatedApps>();
-            apps.Add(new InstantiatedApps(1, 100, "Test User", "Y", "Test Shop"));
-            apps.Add(new InstantiatedApps(2, 100, "Test User", "Y", "Test Shop"));
-            apps.Add(new InstantiatedApps(3, 100, "Test User", "Y", "Test Shop"));
-            apps.Add(new InstantiatedApps(4, 100, "Test User", "Y", "Test Shop"));
+            apps.Add(new InstantiatedApps(1, 100, "Test User", "Y", "Test Shop", "Appointment", 1000, 1500));
+            apps.Add(new InstantiatedApps(2, 100, "Test User", "Y", "Test Shop", "Appointment", 1200, 1100));
+            apps.Add(new InstantiatedApps(3, 100, "Test User", "Y", "Test Shop", "Appointment", 1300, 1500));
+            apps.Add(new InstantiatedApps(4, 100, "Test User", "Y", "Test Shop", "Appointment", 0900, 1300));
 
             var counts = apps.Count();
 
@@ -39,14 +39,18 @@ namespace APITests
         [Fact]
         public void InstantiateAppointments()
         {
+            // manual check to ensure the appointment information provided and matches once added to the list
 
             var uninstantiatedId = 1;
             var uninstantiatedBarberId = 2;
             var uninstanatiedBarber = "Test Barber";
             var uninstantiatedBooked = "Y";
             var uninstantiatedShop = "Test Shop";
+            var uninstantiatedName = "appointment";
+            var uninstantiatedTime = 1000;
+            var uninstantiatedPrice = 1200;
 
-            InstantiatedApps i = new InstantiatedApps(uninstantiatedId, uninstantiatedBarberId, uninstanatiedBarber, uninstantiatedBooked, uninstantiatedShop);
+            InstantiatedApps i = new InstantiatedApps(uninstantiatedId, uninstantiatedBarberId, uninstanatiedBarber, uninstantiatedBooked, uninstantiatedShop, uninstantiatedName, uninstantiatedTime, uninstantiatedPrice);
 
            
 
@@ -55,6 +59,10 @@ namespace APITests
             var instantiatedBarber = i.Barber;
             var instantiatedBooked = i.Booked;
             var instantiatedShop = i.Shop;
+            var instantiatedName = i.Name;
+            var instantiatedTime = i.Time;
+            var instantiatedPrice = i.Price;
+                
            
 
             Assert.Equal(uninstantiatedId, instantiatedId);
@@ -62,11 +70,15 @@ namespace APITests
             Assert.Equal(uninstanatiedBarber, instantiatedBarber);
             Assert.Equal(uninstantiatedBooked, instantiatedBooked);
             Assert.Equal(uninstantiatedShop, instantiatedShop);
+            Assert.Equal(uninstantiatedName, instantiatedName);
+            Assert.Equal(uninstantiatedTime, instantiatedTime);
+            Assert.Equal(uninstantiatedPrice, instantiatedPrice);
         }
 
         [Fact]
         public void InstantiateProducts()
         {
+            // manual check to ensure the product information provided and matches once added to the list
 
             var uninstantiatedName = "Test";
             var uninstantiatedAmmount = 1;

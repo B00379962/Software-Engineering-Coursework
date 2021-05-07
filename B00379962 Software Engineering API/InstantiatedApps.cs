@@ -1,84 +1,86 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccessManager
+﻿namespace DataAccessManager
 {
     public class InstantiatedApps
     {
-        private int id;
-        private int barberID;
-        private string barber;
-        private string booked;
-        private string shop;
-        private string name;
-        private int time;
-        private decimal price;
+        // appointment id
+        private int _id;
+        // barber id
+        private int _barberID;
+        // barber name
+        private string _barber;
+        // booked or not
+        private string _booked;
+        // shop the booking is for
+        private string _shop;
+        // generic name for appointment
+        private string _name;
+        // time of appointment
+        private int _time;
+        // price of appointment
+        private decimal _price;
 
 
         public InstantiatedApps(int id, int barberID, string barber, string booked, string shop, string name, int time, decimal price)
         {
-            this.id = id;
-            this.barberID = barberID;
-            this.barber = barber;
-            this.booked = booked;
-            this.shop = shop;
-            this.name = name;
-            this.time = time;
-            this.price = price;
+            this._id = id;
+            this._barberID = barberID;
+            this._barber = barber;
+            this._booked = booked;
+            this._shop = shop;
+            this._name = name;
+            this._time = time;
+            this._price = price;
         }
 
 
 
         public int Id
         {
-            get { return id; }
-            set { id = value; }
+            get { return _id; }
+            set { _id = value; }
         }
 
         public int BarberID
         {
-            get { return barberID; }
-            set { barberID = value; }
+            get { return _barberID; }
+            set { _barberID = value; }
         }
 
         public string Barber
         {
-            get { return barber; }
-            set { barber = value; }
+            get { return _barber; }
+            set { _barber = value; }
 
         }
 
         public string Booked
         {
-            get { return booked; }
-            set { booked = value; }
+            get { return _booked; }
+            set { _booked = value; }
         }
 
         public string Shop
         {
-            get { return shop; }
-            set { shop = value; }
+            get { return _shop; }
+            set { _shop = value; }
         }
 
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get { return _name; }
+            set { _name = value; }
         }
 
         public int Time
         {
-            get { return time; }
-            set { time = value; }
+            get { return _time; }
+            set { _time = value; }
         }
 
         public decimal Price
         {
-            get { return price; }
-            set { price = value; }
+            get { return _price; }
+            set { _price = value; }
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DataAccessManager;
 using Xunit;
 
@@ -19,6 +15,7 @@ namespace APITests
         [Fact]
         public void CheckShop1Exists()
         {
+            // test if shop 1 exists
             string shop1 = "N";
             userFactory = UserFactory.CreateUserFactory("shop1");
             if (userFactory != null)
@@ -32,6 +29,7 @@ namespace APITests
         [Fact]
         public void CheckShop2Exists()
         {
+            // test if shop 2 exists
             string shop2 = "N";
             userFactory = UserFactory.CreateUserFactory("shop2");
             if (userFactory != null)
@@ -46,6 +44,7 @@ namespace APITests
         [Fact]
         public void CheckShop1AdminGroupExists()
         {
+            // check if shop 1 admin exists
             string usergrpshop1 = "N";
             userFactory = UserFactory.CreateUserFactory("shop1");
 
@@ -61,6 +60,7 @@ namespace APITests
         [Fact]
         public void CheckShop2AdminGroupExists()
         {
+            // check if shop 2 admin exists
             string usergrpshop2 = "N";
             userFactory = UserFactory.CreateUserFactory("shop2");
 
@@ -76,6 +76,7 @@ namespace APITests
         [Fact]
         public void CheckShop1BarbersGroupExist()
         {
+            // check if shop 1 barber exists
             string barbergrpshop1 = "N";
             userFactory = UserFactory.CreateUserFactory("shop1");
 
@@ -93,6 +94,7 @@ namespace APITests
         [Fact]
         public void CheckShop2BarbersGroupExist()
         {
+            // check if shop 2 barber exists
             string barbergrpshop2 = "N";
             userFactory = UserFactory.CreateUserFactory("shop2");
 
@@ -111,6 +113,7 @@ namespace APITests
         [Fact]
         public void CheckShop1UserGroupExist()
         {
+            // check if shop 1 has users
             string usergrpshop1 = "N";
             userFactory = UserFactory.CreateUserFactory("shop1");
 
@@ -127,6 +130,8 @@ namespace APITests
         [Fact]
         public void CheckShop2UserGroupExist()
         {
+            // check if shop 2 has users
+
             string usergrpshop2 = "N";
             userFactory = UserFactory.CreateUserFactory("shop2");
 
@@ -143,6 +148,7 @@ namespace APITests
         [Fact]
         public void CheckShop1AdminPersonExists()
         {
+            // check that the user for the admin group exists in shop 1
             string adminusershop1 = "N";
             userFactory = UserFactory.CreateUserFactory("shop1");
 
@@ -159,6 +165,8 @@ namespace APITests
         [Fact]
         public void CheckShop2AdminPersonExists()
         {
+            // check that the user for the admin group exists in shop 2
+
             string adminusershop2 = "N";
             userFactory = UserFactory.CreateUserFactory("shop2");
 
@@ -175,6 +183,7 @@ namespace APITests
         [Fact]
         public void CheckShop1BarberPersonExists()
         {
+            // check that the user for the barber group exists in shop 1
             string barberusershop1 = "N";
             userFactory = UserFactory.CreateUserFactory("shop1");
 
@@ -191,6 +200,7 @@ namespace APITests
         [Fact]
         public void CheckShop2BarberPersonExists()
         {
+            // check that the user for the barber group exists in shop 2
             string barberusershop2 = "N";
             userFactory = UserFactory.CreateUserFactory("shop2");
 
@@ -208,6 +218,7 @@ namespace APITests
         [Fact]
         public void CheckShop1UserPersonExists()
         {
+            // check that the user for the user group exists in shop 1
             string usershop1 = "N";
             userFactory = UserFactory.CreateUserFactory("shop1");
 
@@ -224,6 +235,7 @@ namespace APITests
         [Fact]
         public void CheckShop2UserPersonExists()
         {
+            // check that the user for the user group exists in shop 2
             string usershop2 = "N";
             userFactory = UserFactory.CreateUserFactory("shop2");
 

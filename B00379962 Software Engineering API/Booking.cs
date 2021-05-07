@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataAccessManager;
-using System.IO;
 
 
 namespace AssetReservation
@@ -48,6 +44,7 @@ namespace AssetReservation
             }
             else
             {
+                // if ID given does not exist show error
                 throw new InvalidOperationException("That is not a valid appointment ID");
             }
         }
@@ -65,7 +62,7 @@ namespace AssetReservation
                     Appointments = new List<Appointment>()
                     {
                         new Appointment()
-                            // need to create another level for the price and time, same as XML
+                            
                             {barber = barberName, BarberID = barberIds, Id = Id, booked = "Y", shop = Shop}
                     }
                 }
@@ -93,8 +90,10 @@ namespace AssetReservation
             // get product with ID specified 
             InstantiatedProducts p = p1.GetById(prodId);
 
+            // check ID exists
             if (p != null)
             {
+                // check the number of items requested is in stock
                 if (p.amount >= amount)
                 {
 

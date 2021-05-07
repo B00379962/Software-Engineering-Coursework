@@ -68,6 +68,7 @@
     <Compile Include="InstantiatedAppsTests.cs" />
     <Compile Include="InstantiatedProductsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingletonTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

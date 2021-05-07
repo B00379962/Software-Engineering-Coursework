@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 using DataAccessManager;
-using AssetReservation;
-using Xunit.Abstractions;
 
 namespace APITests
 {
@@ -16,6 +11,8 @@ namespace APITests
         [Fact]
         public void CheckAppFileExport()
         {
+            // check that appointment file has been written using last write time and system date time
+
             int appid = 99;
             string barbername = "Test";
             int barberids = 123;
@@ -49,13 +46,14 @@ namespace APITests
             var currentMinute = currentTime.Minute;
 
             var hourMinute = currentHour + ":" + currentMinute;
-            //Console.WriteLine(write);
+           
             Assert.Equal(hourMinute, writeMinuteHour);
         }
 
         [Fact]
         public void CheckProdFileExport()
         {
+            // check that product file has been written using last write time and system date time
 
             string prodName = "Test Product";
             int prodIds = 100;
@@ -91,7 +89,7 @@ namespace APITests
             var currentMinute = currentTime.Minute;
 
             var hourMinute = currentHour + ":" + currentMinute;
-            //Console.WriteLine(write);
+            
             Assert.Equal(hourMinute, writeMinuteHour);
         }
 

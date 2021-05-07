@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 using DataAccessManager;
 using AssetReservation;
-using Xunit.Abstractions;
 
 namespace APITests
 {
@@ -15,8 +10,9 @@ namespace APITests
     public class BookingTests
     {
         [Fact]
-        public void InvalidBookingID()
+        public void InvalidBookingId()
         {
+            // check that invalid booking ID throws error
             Book b12 = new Book();
 
             Assert.Throws<InvalidOperationException>(() => b12.BookAppointment(99));
@@ -25,6 +21,7 @@ namespace APITests
         [Fact]
         public void InvalidProductID()
         {
+            // check that invalid product ID throws error
             Book b13 = new Book();
 
             Assert.Throws<InvalidOperationException>(() => b13.BuyProduct(99, 1));
@@ -34,6 +31,7 @@ namespace APITests
         [Fact]
         public void ProductAmountMoreThanAvailable()
         {
+            // check when buying more products than are available that an error shows
             Book b14 = new Book();
             Assert.Throws<InvalidOperationException>(() => b14.BuyProduct(1, 10000));
         }
@@ -42,7 +40,7 @@ namespace APITests
         [Fact]
         public void CheckAppNotBlank()
         {
-
+            // check that the appointment export is not blank when it's booked
             int appId = 99;
             string barberName = "Test";
             int barberIds = 123;
@@ -72,7 +70,7 @@ namespace APITests
         [Fact]
         public void CheckProdNotBlank()
         {
-
+            // check that the product export is not blank when it's booked
             string prodName = "Test Product";
             int prodIds = 100;
             int newAmount = 5;

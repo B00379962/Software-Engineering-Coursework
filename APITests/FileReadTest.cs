@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 using DataAccessManager;
-using AssetReservation;
 
 namespace APITests
 {
@@ -18,19 +14,23 @@ namespace APITests
         [Fact]
         public void CheckAppointmentFile()
         {
+            // check the file exists for appointments
             Assert.True(File.Exists(Environment.CurrentDirectory + @"\appointmentsfile.xml"));
         }
 
         [Fact]
         public void CheckProductFile()
         {
+            // check the file exists for products
             Assert.True(File.Exists(Environment.CurrentDirectory + @"\products.xml"));
         }
 
         [Fact]
         public void CheckFileNotEmpty()
         {
-            //required because of shared resource access
+            // check that appointments are being added to the list
+
+            //sleep required because of shared resource access
             int sleepTime = 2000; 
             Task.Delay(sleepTime).Wait();
             List<InstantiatedApps> appsList = new List<InstantiatedApps>();
@@ -42,8 +42,8 @@ namespace APITests
                 foreach (Appointment s in c.Appointments)
                 {
                     //Add each appointment to Instantiated Apps 
-                    Console.WriteLine(s.BarberID + s.Id);
-                    appsList.Add(new InstantiatedApps(s.Id, s.BarberID, s.barber, s.booked, s.shop));
+                    
+                    appsList.Add(new InstantiatedApps(s.Id, s.BarberID, s.barber, s.booked, s.shop, c.Name, c.Time, c.Price));
                 }
 
                 Assert.True(appsList != null);
@@ -57,7 +57,9 @@ namespace APITests
         [Fact]
         public void CheckIDMatch()
         {
-            //required because of shared resource access
+            // check that the appointment ID returned matches the one requested
+
+            //sleep required because of shared resource access
             int sleepTime = 500;
             Task.Delay(sleepTime).Wait();
             int testid = 1;

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <AppClasses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <AppClass>
+  <AppClass time="0" price="0">
     <Appointments>
       <Appointment id="99" barberid="123" barber="Test" booked="Y" shop="Shop 1" />
     </Appointments>

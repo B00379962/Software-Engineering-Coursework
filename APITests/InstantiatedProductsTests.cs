@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 using DataAccessManager;
-using AssetReservation;
 
 namespace APITests
 {
@@ -14,6 +10,7 @@ namespace APITests
         [Fact]
         public void CheckListAdditionOneItem()
         {
+            // test product list addition (1 item) is working
             List<InstantiatedProducts> apps = new List<InstantiatedProducts>();
             apps.Add(new InstantiatedProducts("Product Test", 100, 29));
 
@@ -25,6 +22,7 @@ namespace APITests
         [Fact]
         public void CheckListAdditionMultipleItem()
         {
+            // test product list addition (multiple items) is working
             List<InstantiatedProducts> apps = new List<InstantiatedProducts>();
             apps.Add(new InstantiatedProducts("Product Test", 100, 29));
             apps.Add(new InstantiatedProducts("Product Test", 100, 29));

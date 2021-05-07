@@ -1,40 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccessManager
+﻿namespace DataAccessManager
 {
     public class InstantiatedProducts
     {
-        private string name;
-        private int Amount;
-        private int prodid;
+        // name of product
+        private string _name;
+        //amount of product in stock
+        private int _amount;
+        // id of product
+        private int _prodid;
 
         public InstantiatedProducts(string name, int Amount, int prodid)
         {
-            this.name = name;
-            this.Amount = Amount;
-            this.prodid = prodid;
+            this._name = name;
+            this._amount = Amount;
+            this._prodid = prodid;
         }
 
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get { return _name; }
+            set { _name = value; }
         }
 
         public int amount
         {
-            get { return Amount; }
-            set { Amount = value; }
+            get { return _amount; }
+            set { _amount = value; }
         }
 
         public int Prodid
         {
-            get { return prodid; }
-            set { prodid = value; }
+            get { return _prodid; }
+            set { _prodid = value; }
 
         }
     }
